@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /service-discovery
+  port: 8001
+
+spring:
+  application:
+    name: 'MyServiceDiscovery'
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: 'http://localhost:${server.port}/${spring.application.name}/eureka'
