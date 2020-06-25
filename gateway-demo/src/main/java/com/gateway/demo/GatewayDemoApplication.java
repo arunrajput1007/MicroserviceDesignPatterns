@@ -16,6 +16,8 @@ public class GatewayDemoApplication {
 	@Bean
 	public RouteLocator routingLogic(RouteLocatorBuilder builder){
 		return builder.routes()
+				.route(r1 -> r1.path("/person/**")
+				.uri("lb://person-service/person/**"))
 				.build();
 	}
 }

@@ -13,9 +13,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Slf4j
 @RestController
 @RequestMapping("person")
-@Slf4j
 public class PersonController {
 
     @Autowired
