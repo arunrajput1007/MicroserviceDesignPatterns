@@ -11,5 +11,4 @@ public class SdDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SdDemoApplication.class, args);
 	}
-
 }
