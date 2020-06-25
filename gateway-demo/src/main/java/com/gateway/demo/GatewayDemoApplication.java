@@ -16,9 +16,6 @@ public class GatewayDemoApplication {
 	@Bean
 	public RouteLocator routingLogic(RouteLocatorBuilder builder){
 		return builder.routes()
-				.route(r1 -> r1.host("i.feel.lucky:8006")
-						.and().path("/headerrouting/**")
-						.uri("http://httpstat.us"))
 				.build();
 	}
 }
